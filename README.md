@@ -42,11 +42,10 @@ Messages are sent as plain text and may contain up to 4096 Unicode characters. A
 bun install
 bun test
 bun run typecheck
-bun run build
-bun link
+bun run install-global
 ```
 
-`bun link` registers the built `tmsg` executable in Bun's global binary directory.
+`bun run install-global` builds a standalone executable and copies it directly to `~/.bun/bin/tmsg`. The installed command is a regular file—not a symlink—and continues working if this project directory is moved or deleted.
 
 ## Agent prompt
 

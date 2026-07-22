@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "bun build ./src/cli.ts --compile --outfile ./dist/tmsg",
+    "install-global": "bun run ./scripts/install-global.ts",
     "test": "bun test",
     "typecheck": "tsc --noEmit"
   },
